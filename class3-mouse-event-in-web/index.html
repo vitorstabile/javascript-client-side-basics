@@ -1,0 +1,97 @@
+<!doctype html>
+
+<html lang="pt-br"> 
+
+	<head> 
+		<title>My Page</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script language="javascript" src="js/myscript.js"></script>
+
+		<style>
+
+			.center{
+				position: relative;
+				background: #CCC; 
+				height: 150px; 
+				width: 150px;
+				margin: 20px;
+			}
+
+			.boxContent{
+				position: absolute;
+  				top: 50%;
+  				left: 50%;
+  				transform: translate(-50%, -50%);
+  				margin: 0;
+			}
+
+		</style>
+
+        <script>
+
+			function msgBoasVindas () {
+				alert('Você pressionou e soltou o botão esquerdo uma vez');
+			};
+
+			function msgBoasVindas2 () {
+				alert('Você pressionou o botão esquerdo duas vez');
+			};
+
+			function msgBoasVindas3 () {
+				alert('Você pressionou o botão esquerdo do mouse');
+			};
+
+			function msgBoasVindas4 () {
+				alert('Você trouxe o cursor do mouse para dentro do elemento');
+			};
+
+			function msgBoasVindas5 () {
+				alert('Você retirou o cursor do mouse para fora do elemento');
+			};
+
+		</script>
+
+
+	</head>
+
+	<body>
+	
+		<div>
+			<div onclick="msgBoasVindas()" class="center">
+				<h2 class="boxContent">onclick</h2>
+			</div>
+
+			<div ondblclick="msgBoasVindas2()" class="center">
+				<h2 class="boxContent">ondblclick</h2>
+			</div>
+
+			<div onmousedown="msgBoasVindas3()" class="center">
+				<h2 class="boxContent">onmousedown</h2>
+			</div>
+
+			<div onmouseover="msgBoasVindas4()" class="center">
+				<h2 class="boxContent">onmouseover</h2>
+			</div>
+
+			<div onmouseout="msgBoasVindas5()" class="center">
+				<h2 class="boxContent">onmouseout</h2>
+			</div>
+
+		</div>
+
+	</body>
+
+</html>
+
+<!-- Type mouse events in JavaScript -->
+
+<!-- onclick: triggered in the click of the mouse -->
+
+<!-- ondblclick: triggered in double click of the mouse -->
+
+<!-- onmousedown: triggered in the click of the mouse (if you release the button or not) -->
+
+<!-- onmouseover: triggered when the mouse cursor overlaps the page element  -->
+
+<!-- onmouseout: triggered when the mouse cursor leaves the area of the page element  -->
