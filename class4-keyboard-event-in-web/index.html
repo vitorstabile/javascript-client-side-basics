@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html lang="pt-br"> 
+
+	<head> 
+		<title>My Page</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script language="javascript" src="js/myscript.js"></script>
+
+		<style>
+
+			.center{
+				position: relative;
+				background: #CCC; 
+				height: 200px; 
+				width: 200px;
+				margin: 20px;
+			}
+
+			.boxContent{
+				position: absolute;
+  				top: 50%;
+  				left: 50%;
+  				transform: translate(-50%, -50%);
+  				margin: 0;
+				text-align: center;
+			}
+
+		</style>
+
+		<script>
+
+			function alertKeyDown(){
+				alert('A key was pressed')
+			}
+
+			function alertKeyPress(){
+				alert('A key was pressed')
+			}
+
+			function alertKeyUp(){
+				alert('A key was pressed')
+			}
+
+		</script>
+
+
+	</head>
+
+	<body>
+	
+		<div>
+
+			<div class="center">
+				<div class="boxContent">
+					<h2>On Key Down</h2>
+					<input onkeydown="alertKeyDown()" type="text" size="15px">
+				</div>
+			</div>
+
+			<div class="center">
+				<div class="boxContent">
+					<h2>On Key Press</h2>
+					<input onkeypress="alertKeyPress()" type="text" size="15px">
+				</div>
+			</div>
+
+			<div class="center">
+				<div class="boxContent">
+					<h2>On Key Up</h2>
+					<input onkeyup="alertKeyUp()" type="text" size="15px">
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+
+</html>
+
+<!-- Type keyboard events in JavaScript -->
+
+<!-- onkeydown: triggered when a key is pressed (if you release the key or not) -->
+
+<!-- onkeypress: triggered when a key is pressed (if you release the key or not), but some keys not work alt, ctrl, esc, shift and etc... -->
+
+<!-- onkeyup: triggered when a key is released -->
