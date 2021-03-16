@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html lang="pt-br"> 
+
+	<head> 
+		<title>My Page</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script language="javascript" src="js/myscript.js"></script>
+
+		<script>
+			function myFunctionOnFocus(x) {
+			  x.style.background = "yellow";
+			  document.getElementById("focus").innerHTML = "The label was focused";
+			}
+
+			function myFunctionOnBlur(x){
+				x.style.background = "red";
+				document.getElementById("blur").innerHTML = "The label lose his focus";
+			}
+
+			function myFunctionOnChange(x){
+				alert('Change the option')
+			}
+
+		</script>
+
+
+	</head>
+
+	<body>
+
+		<input type="text" onfocus="myFunctionOnFocus(this)" onblur="myFunctionOnBlur(this)">
+		<p id="focus"></p>
+		<p id="blur"></p>
+
+		<select onchange="myFunctionOnChange(this)">
+			<option value="1">First Option</option>
+			<option value="2">Second Option</option>
+		</select>
+
+	</body>
+
+</html>
+
+<!-- Type forms events in JavaScript -->
+
+<!-- onfocus: triggered when the element resize a focus from cursor -->
+
+<!-- onblur: triggered when the element lose the focus from cursor -->
+
+<!-- onchange: triggered when the state of the element change -->
