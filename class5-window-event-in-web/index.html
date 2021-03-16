@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html lang="pt-br"> 
+
+	<head> 
+		<title>My Page</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script language="javascript" src="js/myscript.js"></script>
+
+		<script>
+
+			function resizeFunction() {
+				document.getElementById("resize").innerHTML = "Resized the Body page";
+			}
+
+		</script>
+
+
+	</head>
+
+	<body onload="alert('The page was loaded')" onresize="resizeFunction()">
+
+		<p id="resize"></p>
+
+	</body>
+
+</html>
+
+<!-- Type window events in JavaScript -->
+
+<!-- onload: triggered when the window finish the load page -->
+
+<!-- onresize: triggered when the window or frame is resized -->
