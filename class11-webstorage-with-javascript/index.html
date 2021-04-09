@@ -1,0 +1,90 @@
+<!doctype html>
+
+<html lang="pt-br"> 
+
+	<head> 
+		<title>My Page</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script language="javascript" src="js/myscript.js"></script>
+
+		<script>
+
+			/*
+
+			localStorage.setItem("name", "Vitor"); // To set a item, use this function
+
+			document.write(localStorage.getItem("name")); // if you close the web browser and test in the console, he will save the colocal storage
+
+			// or
+
+			document.write(localStorage.name);
+
+			// try to comment this line, and make getItem in the console
+
+			// to remove
+
+			localStorage.removeItem("name");
+
+			localStorage.setItem("name", "Joao")
+
+			document.write(localStorage.name);
+
+			to use this with session storage, use sessionStorage.setItem("name", "Vitor"). IS the same as localStorage
+
+					
+			*/
+
+
+
+		</script>
+
+	</head>
+
+	<body>
+	
+		<div id="name"></div>
+
+		<script>
+
+			localStorage.setItem("name", "Vitor"); // To set a item, use this function
+
+			localStorage.removeItem("name");
+			
+			var name = '';
+
+			if(typeof localStorage.name == 'undefined'){
+				localStorage.name = prompt("What is your name?");
+			}
+
+			name = localStorage.name;
+
+			document.getElementById('name').innerHTML = name;
+
+
+		</script>
+
+	</body>
+
+</html>
+
+<!-- 
+
+Web storage, sometimes known as DOM storage (Document Object Model storage), 
+provides web apps with methods and protocols for storing client-side data. 
+Web storage supports persistent data storage, similar to cookies but with a greatly enhanced capacity
+ and no information stored in the HTTP request header. 
+ There are two main web storage types: local storage and session storage, behaving similarly to persistent cookies and session cookies respectively. 
+ Web Storage is standardized by the World Wide Web Consortium (W3C) and WHATWG. All major browsers support it.
+
+ Cookies: Data or values that you can save in the client browser when he close the web browser to know, for some example, the last page that he access in your web site,
+ what value of search he use in your web site and etc...
+
+ Sessions: Is simular to cookies, but lost the data or values when the client close the web browser. Example: Bank Web sites.
+ 
+ Local Storage: Save Local data or value in the web browser from the user -> Like Cookie
+
+ Session Storage: Save session data or value in the web site -> Like Sessions
+
+
+ -->
