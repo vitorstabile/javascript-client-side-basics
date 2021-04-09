@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="pt-br"> 
+
+	<head> 
+		<title>My Page</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script language="javascript" src="js/myscript.js"></script>
+		
+		<script>
+
+			function action(){
+
+				document.getElementById('example1').innerHTML += "Adding Elements in This Div <br/>" // innerHTML is use to put element in a document
+
+			}
+
+			
+
+
+		</script>
+
+	</head>
+
+	<body>
+	
+		<div id="example1" style="border: 1px solid red;"></div>
+
+		<input onclick="action()" type="button" value="Add Element in This Div"/>
+
+	</body>
+
+</html>
+
+<!-- // innerHTML is use to put element in a document -->
